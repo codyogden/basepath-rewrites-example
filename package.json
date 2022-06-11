@@ -1,0 +1,16 @@
+{
+    "name": "basepath-example",
+    "workspaces": [
+        "apps/a",
+        "apps/b"
+    ],
+    "scripts": {
+        "build": "turbo run build",
+        "dev": "turbo run dev",
+        "start": "turbo run start"
+    },
+    "devDependencies": {
+        "turbo": "^1.2.9"
+    },
+    "license": "MIT"
+}
