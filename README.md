@@ -1,4 +1,4 @@
-# Mutliple Next.s Apps with Base Path & Rewrites
+# Mutliple Next.js Apps with Base Path & Rewrites
 Multiple Next.js apps can live in harmony by configuring the `basePath` property in `next.config.js` and using rewrites.
 
 In this repo, there are two Next.js applications: `A` and `B`. App `A` is our primary website (source) and we want to use rewrites to display content from App `B` (destination). Since Next.js compiles using relative URLs for the front-end assets, if we only configure a rewrite on App `A`, the pages on App `B` will attempt to request static assets that don't exist. This causes 404 errors in the browser's console.
