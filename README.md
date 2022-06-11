@@ -36,3 +36,6 @@ beforeFiles: [
 This rewrite ensures that both the page requests and any static assets requested after this pathname will be rewritten to App `B`. To test this, you can open [http://localhost:3000](http://localhost:3000) which serves App `A`'s [`pages/index.tsx`](./apps/a/pages/index.tsx). Click through to the [Maintenance Page](http://localhost:3000/maintenance) which will display App `B`'s [`pages/index.tsx`](./apps/b/pages/index.tsx).
 
 In DevTools, you can verify that all requests for App `B`'s static assets (e.g. JS, CSS, and JSON files) are being successfully delivered from `http://localhost:3000/maintenance/_next/...`.
+
+## Takeaways
+Next.js applications can work with each other to deliver incredible experiences for users, including using multiple applications under different directories with a single top-level domain name.
