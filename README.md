@@ -21,7 +21,7 @@ npm run dev
 Let's start by taking a look at App `B`. In your browser, open [http://localhost:3001](http://localhost:3001). As you can see, the index page of this Next app 404s. This is because `basePath` is set to `/maintenance` in App `B`'s [`next.config.js`](./apps/b/next.config.js). This means that the Next.js app will serve [`pages/index.tsx`](./apps/b/pages/index.tsx) at [`/maintenance`](http://localhost:3001/maintenance). If you pull up [http://localhost:3001/maintenance](http://localhost:3001/maintenance), open DevTools, and look in the Network tab, you can see that all static assets are coming from `http://localhost:3001/maintenace/_next/...`, and the App `B`'s [`pages/index.tsx`](./apps/b/pages/index.tsx) is successfully served to this path.
 
 ### Configure Rewrites in the Source App
-Now that we've configured App `B`, let's connect App `A` to our maintenance page app by using rewrites.
+Now that we've configured App `B`, let's connect App `A` to our destination app by using rewrites.
 
 In App `A`'s [`next.config.js`](./apps/a/next.config.js) file, you can see a `beforeFiles` rewrite rule listed:
 
