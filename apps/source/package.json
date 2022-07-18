@@ -1,9 +1,9 @@
 {
-  "name": "b",
+  "name": "source",
   "scripts": {
-    "dev": "next -p 3001",
+    "dev": "next -p 3000",
     "build": "next build",
-    "start": "PORT=3001 next start"
+    "start": "PORT=3000 next start"
   },
   "dependencies": {
     "next": "^12.1.6",

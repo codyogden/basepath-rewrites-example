@@ -1,8 +1,7 @@
 {
     "name": "basepath-example",
     "workspaces": [
-        "apps/a",
-        "apps/b"
+        "apps/*"
     ],
     "scripts": {
         "build": "turbo run build",

@@ -1,14 +1,15 @@
 {
-  "name": "a",
+  "name": "destination",
   "scripts": {
-    "dev": "next -p 3000",
+    "dev": "next -p 3001",
     "build": "next build",
-    "start": "PORT=3000 next start"
+    "start": "PORT=3001 next start"
   },
   "dependencies": {
     "next": "^12.1.6",
     "react": "^18.1.0",
-    "react-dom": "^18.1.0"
+    "react-dom": "^18.1.0",
+    "sass": "^1.52.3"
   },
   "devDependencies": {
     "@types/node": "^17.0.42",

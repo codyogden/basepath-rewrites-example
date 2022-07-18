@@ -3,7 +3,9 @@ import { NextPage } from 'next';
 interface IndexPageProps {}
 
 const IndexPage: NextPage<IndexPageProps> = () => {
-  return <>This page is served from App B.</>;
+  return <>
+    <p>This page is served from App B.</p>
+  </>;
 };
 
 export default IndexPage;
