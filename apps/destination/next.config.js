@@ -1,3 +1,3 @@
 module.exports = {
-    basePath: '/maintenance',
+    basePath: '/portal',
 }
