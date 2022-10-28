@@ -30,7 +30,8 @@
   },
   "include": [
     "pages",
-    "next-env.d.ts"
+    "next-env.d.ts",
+    "amp.d.ts"
   ],
   "exclude": [
     "node_modules"

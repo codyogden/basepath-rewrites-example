@@ -4,7 +4,11 @@ module.exports = {
             beforeFiles: [
                 {
                     source: '/portal/:path*',
-                    destination: `http://127.0.0.1:3001/portal/:path*`
+                    destination: `${process.env.DESTINATION}/portal/:path*`
+                },
+                {
+                    source: '/amp/portal/:path*',
+                    destination: `${process.env.DESTINATION}/portal/:path*?amp=1`
                 },
             ],
             // afterFiles: [],
