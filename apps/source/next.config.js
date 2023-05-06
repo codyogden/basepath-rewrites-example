@@ -1,7 +1,7 @@
 module.exports = {
     async rewrites() {
         return {
-            beforeFiles: [
+            fallback: [
                 {
                     source: '/portal/:path*',
                     destination: `${process.env.PORTAL_URL}/portal/:path*`
