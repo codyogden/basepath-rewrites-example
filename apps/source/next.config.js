@@ -1,7 +1,11 @@
 module.exports = {
     async rewrites() {
         return {
-            afterFiles: [
+            fallback: [
+                {
+                    source: '/portal',
+                    destination: `${process.env.PORTAL_URL}/portal`
+                },
                 {
                     source: '/portal/:path*',
                     destination: `${process.env.PORTAL_URL}/portal/:path*`
