@@ -1,7 +1,7 @@
 module.exports = {
     async rewrites() {
         return {
-            beforeFiles: [
+            afterFiles: [
                 {
                     source: '/portal',
                     destination: `${process.env.PORTAL_URL}/portal`
