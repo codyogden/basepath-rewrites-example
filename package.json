@@ -5,11 +5,14 @@
     ],
     "scripts": {
         "build": "turbo run build",
-        "dev": "turbo run dev",
+        "dev": "dotenv -- turbo run dev",
         "start": "turbo run start"
     },
     "devDependencies": {
         "turbo": "^1.2.9"
     },
-    "license": "MIT"
+    "license": "MIT",
+    "dependencies": {
+        "dotenv-cli": "^7.2.1"
+    }
 }
