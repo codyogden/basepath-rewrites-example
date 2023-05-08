@@ -5,6 +5,10 @@ In this repo, there are two Next.js applications: `A` and `B`. App `A` is our pr
 
 To work around this, Next.js provides a `basePath` property in `next.config.js` that will change the relative pathname for the static assets of App `B`.
 
+## Deployed on Vercel
+- **Source:** https://basepath-rewrites-source.vercel.app
+- **Destination:** https://basepath-rewrites-destination.vercel.app/portal
+
 ## Exploring This Configuration
 To get started, clone the repo and install the dependencies.
 
